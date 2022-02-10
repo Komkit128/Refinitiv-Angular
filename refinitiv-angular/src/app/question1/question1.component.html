@@ -1,0 +1,14 @@
+<div class="grid">
+  <div class="grid-1">
+    <input type="string" (keypress)="numberOnly($event)" (keyup)="onKeyUp($event)" placeholder="InputNumber" [(ngModel)]="inputNumbers" >
+  </div>
+  <div class="grid-2">
+    <select class='select-option' #mySelect (change)="OnOptionsSelected(selectedDropDown)" [(ngModel)]="selectedDropDown" >
+      <option class='option' *ngFor='let option of dropDownList' [value]="option.code">{{option.name}}</option>
+    </select>
+  </div>
+  <div class="grid-3">
+    <label style="font-size:18px; font-weight: 700;" *ngIf="checkResults"> true </label>
+    <label style="font-size:18px; font-weight: 700;" *ngIf="!checkResults"> false </label>
+  </div>
+</div>

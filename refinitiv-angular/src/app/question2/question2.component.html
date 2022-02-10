@@ -1,0 +1,17 @@
+<div style="min-height: 1000px; min-width:100vw;">
+  <table *ngIf="dataTable" >
+    <input type="string" (keyup)="onKeyUp($event)" placeholder="FilterCategories" [(ngModel)]="filterString" >
+
+    <thead> <th> Categories </th> </thead>
+    <tbody>
+      <tr *ngFor="let item of dataTable.categories">
+        <td style="background-color:aquamarine;"> <label> {{item}} </label> </td>
+      </tr>
+      <tr>
+        <td style="color:black"> total : {{dataTable.count}} from {{dataTableRaw.count}} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

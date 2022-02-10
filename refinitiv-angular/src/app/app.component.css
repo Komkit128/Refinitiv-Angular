@@ -1,0 +1,17 @@
+.header {
+  text-align: left;
+  background: darkolivegreen;
+}
+
+.questionButton{
+  color : white;
+  background: gray;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 6px;
+}
+
+.questionButton a {
+  color : white;
+  text-decoration: none
+}

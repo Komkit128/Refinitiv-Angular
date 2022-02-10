@@ -1,0 +1,25 @@
+:host ::ng-deep .grid{
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+  border: solid 1px black;
+  min-height: 80vh;
+}
+
+:host ::ng-deep .grid div{
+  border: solid 1px black;
+}
+
+:host ::ng-deep html, :host ::ng-deep body{
+  width: 90vw;
+  height: 90vh;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@media (max-width: 600px){
+  :host ::ng-deep .grid{
+    overflow-x: scroll;
+  }
+}
+
+

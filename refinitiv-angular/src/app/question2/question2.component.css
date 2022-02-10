@@ -1,0 +1,4 @@
+:host ::ng-deep html, :host ::ng-deep body{
+  overflow-y: auto;
+  overflow-x: auto;
+}
